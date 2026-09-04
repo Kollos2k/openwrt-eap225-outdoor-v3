@@ -1,6 +1,6 @@
 # openwrt-eap225-outdoor-v3
 
-Ich habe erfolgreich openwrt auf einen eap225-outdoor mit der neusten tplink firmware installiert.....
+Ich habe erfolgreich openwrt auf einen eap225-outdoor mit der neusten tplink firmware installiert. Die neuste Firmware sperrt die Installation von alter TP-Link firmware sowie fremder wie OpenWrt. Auf diesem Weg kann mann dennoch von der offiziellen Firmware abweichen.
 
 <h3>Benötigtes Material</h3>
 <table>
