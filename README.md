@@ -33,4 +33,7 @@ cp /FOLDER/openwrt-23.05.5-ath79-generic-tplink_eap225-outdoor-v3-initramfs-kern
 <h3>EAP225 Platine</h3>
 <p>Auf der Platine befinden sich 4 Pins. TX, RX, GND und VDD. <strong>ACHTUNG PIN VDD NIEMALS ANSCHLIEßEN</strong><br><img src="./images/EAP225-outdoor platine.jpeg" width="300px"></p>
 <h3>Pogo Pins Anschließen</h3>
-<p>Die Klemme mit den Pins auf die Platine aufsetzen. Die Pins TX und RX zwischen Platine und USB Stick tauschen.<br/>TX -> RX<br/>RX -> TX<br/>GND -> GND<img src="./images/EAP225-outdoor anschluss.jpeg" width="300px"><img src="./images/USB-TTL2.jpeg" width="300px"></p>
+<p>Die Klemme mit den Pins auf die Platine aufsetzen. Die Pins TX und RX zwischen Platine und USB Stick tauschen.<br/>TX -> RX<br/>RX -> TX<br/>GND -> GND<br/><img src="./images/EAP225-outdoor anschluss.jpeg" width="300px"><img src="./images/USB-TTL2.jpeg" width="300px"></p>
+<h3>Picocom starten</h3>
+<code>sudo picocom -b 11520 --flow n --parity n --databits 8 /dev/ttyUSB0</code>
+<img src="./images/picocom rdy.png">
