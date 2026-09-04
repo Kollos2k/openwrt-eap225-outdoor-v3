@@ -5,7 +5,7 @@ Ich habe erfolgreich openwrt auf einen eap225-outdoor mit der neusten tplink fir
 <h3>Benötigtes Material</h3>
 <table>
 <tr><td><img src="./images/USB-TTL1.png" width="50px"></td><td>DSD TECH SH-U09C5 USB zu TTL UART Konverter Kabel mit FTDI Chip Unterstützung 5V 3.3V 2.5V 1.8V TTL</td><td>https://amzn.eu/d/0cvFHawQ</td></tr>
-<tr><td><img src="./images/4PinProgrammer.png" width="50px"></td><td>AZDelivery 4 Pin Programmer I2C Modul Test Werkzeug PCB Klemme 1 * 4P Gold-beschichtete Pogo Pins</td><td>https://amzn.eu/d/02t9oDBm</td></tr><tr><td>Schraubenzieher schlitz mit kleiner breite</td></tr>
+<tr><td><img src="./images/4PinProgrammer.png" width="50px"></td><td>AZDelivery 4 Pin Programmer I2C Modul Test Werkzeug PCB Klemme 1 * 4P Gold-beschichtete Pogo Pins</td><td>https://amzn.eu/d/02t9oDBm</td></tr><tr><td colspan="3">Schraubenzieher schlitz mit kleiner breite</td></tr><tr><td colspan="3">Switch mit oder ohne PoE</td></tr>
 </table>
 <h3>Benötigte Dateien</h3>
 <table>
@@ -16,7 +16,7 @@ Ich habe erfolgreich openwrt auf einen eap225-outdoor mit der neusten tplink fir
 
 
 <h3>Vorbereitung</h3>
-<ul><li>Installieren von picocom</li><li>installieren von tftp</li><li>tftp configurieren und datien kopieren</li><li>USB zu TTL Stick auf 3,3V einstellen</li></ul>
+<ul><li>Installieren von picocom</li><li>installieren von tftp</li><li>tftp configurieren und datien kopieren</li><li>USB zu TTL Stick auf 3,3V einstellen</li><li>Netzwerkanschluss herstellen und ips 192.168.0.66/24, 192.168.0.100/24 und 192.168.1.2/24 einstellen <i>Über die IP 192.168.0.66 oder 192.168.0.100 zieht der EAP sich nacher mit TFTP die Firmware. 192.168.1.1 ist im Anschluss standart IP von OpenWrt</i></li></ul>
 
 <code>apt update
 apt install picocom
@@ -42,3 +42,17 @@ EAP225-Outdoor mit POE mit Strom versorgen und Ausgabe auf console beobachten. A
 <img src="./images/EAP225-outdoor first boot.png">
 Wenn Ausgabe passt, dann Stromverbindung trennen und vor dem wieder anschließen <strong>STRG+B</strong> drücken und halten. Dann EAP225 mit strom versorgen. Im Anschluss landet Ihr in der console vom EAP225.
 <img src="./images/EAP225-outdoor console.png">
+<h3>Laden der Firmware vom TFTP Server (Lokaler Rechner)</h3>
+<code>tftp 0x82000000 initrams.bin</code>
+<i>Hin und wieder meldet die Console, dass sie den Befehl tftp nicht kennt.... beim nochmaligen probieren klappt es dann in der Regel. In dem Beispiel Bild ist der Dateiname etwas abgewandelt.</i>
+<img src="./images/EAP225-outdoor copy firmware.png">
+<h3>Firmware in den Speicher laden</h3>
+<code>bootelf</code>
+<img src="./images/EAP225-outdoor install firmware.png">
+<h3>Start OpenWrt</h3>
+<p>Nach ein 1-2 Minuten kann OpenWrt angesprochen werden.</p>
+<img src="./images/LuCi Login.png">
+<p>Wenn das läuft muss die Firmware aber noch komplett installiert werden. Bisher ist nur das Initrams insatlliert. Nach Stromverlust vergisst der Repeater das.</p>
+<img src="./images/LuCi Flash Firmware1.png"><img src="./images/LuCi Flash Firmware2.png">
+<p>Neuste Firmware Downloaden und Sysupgrade installieren.</p>
+
