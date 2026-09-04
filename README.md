@@ -1,7 +1,8 @@
 # openwrt-eap225-outdoor-v3
 
 Ich habe erfolgreich openwrt auf einen eap225-outdoor mit der neusten tplink firmware installiert. Die neuste Firmware sperrt die Installation von alter TP-Link firmware sowie fremder wie OpenWrt. Auf diesem Weg kann mann dennoch von der offiziellen Firmware abweichen.
-
+<h2>Index</h2>
+<ol><li>Benötigtes Material</li><li>Benötigte Dateien</li><li>Vorbereitung</li><li>EAP255-outdoor öffnen</li><li></li><li>Ansicht der Platine EAP225-outdoor</li><li>Picom starten</li></ol>
 <h3>Benötigtes Material</h3>
 <table>
 <tr><td><img src="./images/USB-TTL1.png" width="50px"></td><td>DSD TECH SH-U09C5 USB zu TTL UART Konverter Kabel mit FTDI Chip Unterstützung 5V 3.3V 2.5V 1.8V TTL</td><td>https://amzn.eu/d/0cvFHawQ</td></tr>
