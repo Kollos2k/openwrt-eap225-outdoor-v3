@@ -16,7 +16,7 @@ Ich habe erfolgreich openwrt auf einen eap225-outdoor mit der neusten tplink fir
 
 
 <h3>Vorbereitung</h3>
-<ul><li>Installieren von picocom</li><li>installieren von tftp</li><li>tftp configurieren und Dateien kopieren</li><li>USB zu TTL Stick auf 3,3V einstellen</li><li>Netzwerkanschluss herstellen und ips 192.168.0.66/24, 192.168.0.100/24 und 192.168.1.2/24 einstellen <i>Über die IP 192.168.0.66 oder 192.168.0.100 zieht der EAP sich nacher mit TFTP die Firmware. 192.168.1.1 ist im Anschluss standart IP von OpenWrt</i></li></ul>
+<ul><li>Installieren von picocom</li><li>installieren von tftp (/etc/default/tftp-hpa)</li><li>tftp configurieren und Dateien kopieren</li><li>USB zu TTL Stick auf 3,3V einstellen</li><li>Netzwerkanschluss herstellen und ips 192.168.0.66/24, 192.168.0.100/24 und 192.168.1.2/24 einstellen.<br/> <i>Über die IP 192.168.0.66 oder 192.168.0.100 zieht der EAP sich nacher mit TFTP die Firmware. 192.168.1.1 ist im Anschluss standart IP von OpenWrt</i></li></ul>
 
 
 <code>apt update
@@ -26,6 +26,9 @@ apt install tftp-hpa
 <code>
 cp /FOLDER/openwrt-23.05.5-ath79-generic-tplink_eap225-outdoor-v3-initramfs-kernel.bin /srv/tftp/initramfs.bin
 </code><br/>
+<br/>
+<i>Für Windows Nutzer gibt es gegenstücke zu picocom sowie tftp-hpa. Da ich die nicht getestet habe musst du leider eigene Erfahrungen sammeln. Das Flashen der Firmware ist aber gleich.</i>
+<br/>
 <i>Zu lange Dateinamen können Fehler verursachen. tftp kann durch die Firewall geblockt werden. Vor kopieren Funktionstest durchführen.</i>
 <br/>
 <h3>Öffnen EAP225-Outdoor</h3>
