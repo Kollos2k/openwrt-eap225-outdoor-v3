@@ -37,3 +37,8 @@ cp /FOLDER/openwrt-23.05.5-ath79-generic-tplink_eap225-outdoor-v3-initramfs-kern
 <h3>Picocom starten</h3>
 <code>sudo picocom -b 11520 --flow n --parity n --databits 8 /dev/ttyUSB0</code>
 <img src="./images/picocom rdy.png">
+<h3>EAP225-Outdoor mit Strom versorgen</h3>
+EAP225-Outdoor mit POE mit Strom versorgen und Ausgabe auf console beobachten. Ausgabe sollte folgendermaßen aussehen:
+<img src="./images/EAP225-outdoor first boot.png">
+Wenn Ausgabe passt, dann Stromverbindung trennen und vor dem wieder anschließen <strong>STRG+B</strong> drücken und halten. Dann EAP225 mit strom versorgen. Im Anschluss landet Ihr in der console vom EAP225.
+<img src="./images/EAP225-outdoor console.png">
