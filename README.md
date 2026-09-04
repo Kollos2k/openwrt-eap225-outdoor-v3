@@ -34,7 +34,7 @@ cp /FOLDER/openwrt-23.05.5-ath79-generic-tplink_eap225-outdoor-v3-initramfs-kern
 <br/>
 <h3>Öffnen EAP225-Outdoor</h3>
 <p>Unter den Antennen sind Aufkleber zur Dichtung. Diese entfernen. Unter den Aufklebern sind Muttern mit Schlitz. Den Schraubenzieher in den Schlitz einführen und Mutter durch drehen entfernen. Im Anschluss Unterlegscheibe entfernen und EAP225-Outdoor nach unten entfernen. <i>Achtung. 2 Dichtungsringe für Außen und 2 Dichtungsringe für Innen beim nach unten weg schieben des EAP225 sichern.</i></p>
-<img src="./images/EAP225-outdoor zerlegen.jpeg" width="300px"><br/><i>Zum Öffnen gegen die Antennenanschlüsse drücken. Es benötigt etwas druck, da da dichtungsringe din sind. Mit etwas Druck aber vorsichtig drücken um nichts zu beschädigen.</i><br/>
+<img src="./images/EAP225-outdoor zerlegen.jpeg" width="300px"><br/><i>Zum Öffnen gegen die Antennenanschlüsse drücken. Es benötigt etwas druck, da da dichtungsringe drin sind. Mit etwas Druck aber vorsichtig drücken um nichts zu beschädigen.</i><br/>
 <h3>EAP225 Platine</h3>
 <p>Auf der Platine befinden sich 4 Pins. TX, RX, GND und VDD. <strong>ACHTUNG PIN VDD NIEMALS ANSCHLIEßEN</strong><br><img src="./images/EAP225-outdoor platine.jpeg" width="300px"></p>
 <h3>Pogo Pins Anschließen</h3>
