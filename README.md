@@ -15,3 +15,7 @@ Ich habe erfolgreich openwrt auf einen eap225-outdoor mit der neusten tplink fir
 </table>
 
 
+<h3>Vorbereitung</h3>
+<ul><li>Installieren von picocom</li><li>installieren von tftp</li><li>tftp configurieren und datien kopieren</li></ul>
+
+<code>apt update</code>
